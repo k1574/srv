@@ -1,0 +1,6 @@
+<$ROOT/mkconfig
+NAME = gopherd
+CPPFLAGS = $INC -D_DEFAULT_SOURCE
+CFLAGS = $CPPFLAGS
+LDFLAGS = 
+

@@ -1,0 +1,20 @@
+<mkconfig
+SRC = `{ls *.c}
+#HDR = `{ls *.h}
+<$APP/mk/inc/cbuild
+clean :V:
+	rm -rf $TGT *.o *.htm
+install :V: $TGT
+	cp -f $TGT $EXE/
+	cp -f man $MAN/1/$TGT
+	chmod 0755 $EXE/$TGT
+	chmod 0644 $MAN/1/$NAME
+uninstall :V:
+	rm -f $EXE/$TGT $MAN/1/$NAME
+doc :V: documentation.htm
+documentation.htm: documentation $TGT
+	./$TGT documentation > $target
+test :V: testdoc.htm
+testdoc.htm : $TGT testdoc
+	./$TGT testdoc > $target
+

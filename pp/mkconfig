@@ -1,0 +1,14 @@
+CC = tcc
+LD = $CC
+NAME = pp
+VERSION = 1.2.0
+EXE = $HOME/exe
+SHR = $HOME/shr
+MAN = $SHR/man
+CPPFLAGS = \
+	-DVERSION=\"$VERSION\"\
+	-DHAVE_FORK=1\
+	-DUSE_R2=0
+CFLAGS = 
+LDFLAGS = $LD_STATIC_FLAG $LIB
+

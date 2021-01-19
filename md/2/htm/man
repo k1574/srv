@@ -1,0 +1,22 @@
+.TH md2htm 1 md2htm
+.SH md2htm
+md2htm \- Markdown to HTML converter 
+.SH SYNOPSIS
+.B smu
+.RB [ \-h ]
+.RB [ \-v ]
+.RB [ \-n ]
+.RB [ file ]
+.SH DESCRIPTION
+md2htm is an interpreter for Markdown.
+.SH OPTIONS
+.TP
+.B \-v
+prints version information to standard error, then exits.
+.TP
+.B \-h
+prints usage information to standard error, then exits.
+.TP
+.B \-n
+escapes all HTML Tags.
+

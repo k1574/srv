@@ -1,0 +1,10 @@
+<$HOME/app/mk/inc/config
+CC = cc
+LD = $CC
+NAME = md2htm
+VERSION = 1.5
+CPPFLAGS = $INC \
+	-DVERSION=\"$VERSION\"
+CFLAGS = $CPPFLAGS
+LDFLAGS = $LD_STATIC_FLAG
+
