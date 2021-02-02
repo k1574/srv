@@ -739,6 +739,8 @@ http_prepare_response(const struct request *req, struct response *res,
 				goto err;
 			}
 		}
+		memcpy(realuri, tmpuri, sizeof(realuri));
+		memcpy(res->path, RELPATH(tmpuri), sizeof(res->path));
 	}
 
 	/* modified since */
